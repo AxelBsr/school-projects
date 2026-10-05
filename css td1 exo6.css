@@ -1,0 +1,78 @@
+/* 1. sélectionner uniquement l'en-tête d'identifiant portal-header */
+#portal-header {
+ background-color: #eeeeee;
+}
+/* 2. sélectionner tous les éléments possédant la classe bloc */
+.bloc {
+ border: 1px solid black;
+}
+/* 3. sélectionner l'élément possédant à la fois
+ les classes bloc et important */
+.bloc.important {
+ background-color: lightyellow;
+}
+/* 4. sélectionner tous les éléments dont la classe
+ contient le mot resource-list */
+[class~="resource-list"] {
+ padding-left: 20px;
+}
+/* 5. sélectionner tous les liens qui possèdent un attribut href */
+a[href] {
+ color: navy;
+}
+/* 6. sélectionner le formulaire dont l'attribut action
+ vaut exactement profil.php */
+form[action="profil.php"] {
+ border: 1px solid gray;
+}
+/* 7. sélectionner uniquement les input de type checkbox */
+input[type="checkbox"] {
+ margin-right: 5px;
+}
+/* 8. sélectionner les éléments dont lang vaut fr
+ ou commence par fr- */
+[lang|="fr"] {
+ font-style: italic;
+}
+/* 9. sélectionner tous les li situés dans une liste
+ possédant la classe resource-list */
+.resource-list li {
+ color: #333333;
+}
+/* 10. sélectionner uniquement les p enfants directs d'un fieldset */
+fieldset p {
+ margin: 5px;
+}
+/* 11. sélectionner le paragraphe placé juste après un h2 */
+h2 + p {
+ color: gray;
+}
+/* 12. sélectionner le premier li de chaque liste */
+li:first-child {
+ font-weight: bold;
+}
+/* 13. changer le fond des liens au survol de la souris */
+a:hover {
+ background-color: lightblue;
+}
+/* 14. changer le fond des champs input lorsqu'ils reçoivent le focus */
+input:focus {
+ background-color: lightyellow;
+}
+/* 15. changer le fond du bouton pendant le clic */
+button:focus {
+ background-color: orange;
+}
+/* 16. ajouter le texte "• " avant chaque h3 */
+h3:before {
+ content: "• ";
+}
+/* 17. mettre en majuscules la première lettre
+ des paragraphes du footer */
+footer p::first-letter {
+ text-transform: uppercase;
+}
+/* 18. sélectionner uniquement le lien qui se trouve dans le footer */
+footer a {
+ text-decoration: none;
+}

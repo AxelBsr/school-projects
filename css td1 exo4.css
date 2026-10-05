@@ -1,0 +1,75 @@
+/* 1. sélectionner le titre principal de la page */
+h1 {
+ color: navy;
+}
+/* 2. sélectionner uniquement le paragraphe ayant la classe subtitle */
+.subtitle {
+ font-style: italic;
+}
+/* 3. sélectionner tous les éléments ayant la classe atelier */
+.atelier {
+ border: 1px solid gray;
+}
+/* 4. sélectionner l'atelier qui possède à la fois les classes
+ atelier et important */
+.atelier.important{
+ background-color: lightyellow;
+}
+/* 5. sélectionner tous les liens possédant un attribut href */
+a[href] {
+ color: blue;
+}
+/* 6. sélectionner les liens dont l'attribut title est exactement
+ "Voir l'atelier IA" */
+a[title="Voir l'atelier IA"] {
+ font-weight: bold;
+}
+/* 7. sélectionner tous les h3 situés à l'intérieur de #ateliers */
+#ateliers h3 {
+ text-decoration: underline;
+}
+/* 8. sélectionner uniquement les div enfants directs
+ de la section #ateliers */
+#ateliers > div {
+ margin: 10px;
+}
+/* 9. sélectionner le paragraphe placé juste après chaque h3 */
+h3 + p {
+ color: #444444;
+}
+/* 10. sélectionner le premier paragraphe de chaque fieldset */
+fieldset legend+ p{
+ background-color: #eeeeee;
+}
+/* 11. sélectionner uniquement les input de type text */
+input[type="text"] {
+ border: 1px solid black;
+}
+/* 12. sélectionner uniquement les input de type radio */
+input[type="radio"] {
+ margin-right: 5px;
+}
+/* 13. sélectionner le champ email lorsqu'il reçoit le focus */
+input[type="email"]:focus {
+ background-color: lightcyan;
+}
+/* 14. changer le fond du bouton lorsqu'on le survole */
+button:hover {
+ background-color: yellow;
+}
+/* 15. ajouter le texte "→ " avant chaque h3 */
+h3:before {
+ content: "→ ";
+}
+/* 16. mettre la première lettre des paragraphes des ateliers en rouge */
+#ateliers p::first-letter {
+ color: red;
+}
+/* 17. sélectionner le lien du footer uniquement */
+footer a {
+ text-decoration: none;
+}
+/* 18. sélectionner tous les éléments situés dans un fieldset */
+fieldset * {
+ color: inherit;
+}

@@ -1,0 +1,67 @@
+/* 1. sélectionner tous les éléments article */
+article {
+ border: 1px solid gray;
+}
+/* 2. sélectionner tous les éléments possédant la classe formation */
+.formation {
+ margin: 10px;
+}
+/* 3. sélectionner uniquement l'article possédant les classes
+ formation et featured */
+.formation.featured {
+ background-color: lightyellow;
+}
+/* 4. sélectionner uniquement la section d'identifiant formations */
+#formations {
+ padding: 10px;
+}
+/* 5. sélectionner tous les liens qui possèdent un attribut href */
+a[href] {
+ text-decoration: none;
+}
+/* 6. sélectionner uniquement l'article dont data-level vaut prepa */
+article[data-level="prepa"] {
+ color: navy;
+}
+/* 7. sélectionner les éléments dont la classe contient le mot important */
+*[class~="important"]{
+ font-weight: bold;
+}
+/* 8. sélectionner les éléments dont lang vaut fr
+ ou commence par fr- */
+*[lang|="fr"] {
+ background-color: #eeeeee;
+}
+/* 9. sélectionner uniquement les li enfants directs du ul
+ lui-même enfant direct de nav */
+ul:first-child li {
+ display: inline-block;
+}
+/* 10. sélectionner tous les paragraphes situés dans un article */
+article p {
+ color: #444444;
+}
+/* 11. sélectionner le paragraphe placé juste après un h2 */
+h2 + p {
+ font-style: italic;
+}
+/* 12. sélectionner le premier li de la liste de navigation */
+nav li:first-child {
+ text-transform: uppercase;
+}
+/* 13. changer le fond des liens au survol de la souris */
+a:hover {
+ background-color: yellow;
+}
+/* 14. changer la bordure du champ email lorsqu'il reçoit le focus */
+input[type="email"]:focus {
+ border: 2px solid blue;
+}
+/* 15. ajouter le texte "→ " avant chaque h3 */
+h3:before {
+ content: "→ ";
+}
+/* 16. mettre en rouge la première lettre du paragraphe du footer */
+footer p::first-letter {
+ color: red;
+}

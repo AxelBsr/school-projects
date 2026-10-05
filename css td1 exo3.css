@@ -1,0 +1,67 @@
+/* 1. sélectionner tous les titres h2 de la page */
+h2 {
+ color: navy;
+}
+/* 2. sélectionner tous les éléments possédant la classe important */
+*[class~="important"] {
+ font-weight: bold;
+}
+/* 3. sélectionner uniquement la section d'identifiant news */
+section[id="news"] {
+ border: 1px solid gray;
+}
+/* 4. sélectionner tous les liens qui possèdent un attribut href */
+a[href] {
+ text-decoration: none;
+}
+/* 5. sélectionner uniquement le champ input de type email */
+input[type="email"] {
+ background-color: lightyellow;
+}
+/* 6. sélectionner les éléments dont la classe contient le mot important */
+*[class~="important"] {
+ color: darkred;
+}
+/* 7. sélectionner les éléments dont l'attribut lang vaut fr
+ ou commence par fr- */
+*[lang|="fr"] {
+ background-color: #eeeeee;
+}
+/* 8. sélectionner uniquement les li enfants directs du ul
+ lui-même situé directement dans nav */
+nav ul + li {
+ border-bottom: 1px solid black;
+}
+/* 9. sélectionner tous les paragraphes situés dans un article */
+article p {
+ color: #333333;
+}
+/* 10. sélectionner le paragraphe placé juste après un h2 */
+h2 + p {
+ font-style: italic;
+}
+/* 11. sélectionner le premier li de chaque liste */
+li:first-child {
+ text-transform: uppercase;
+}
+/* 12. changer le fond des liens au survol de la souris */
+a[href]:hover {
+ background-color: yellow;
+}
+/* 13. changer la bordure du champ email lorsqu'il reçoit le focus */
+input[type="email"]:focus {
+ border: 2px solid blue;
+}
+/* 14. ajouter le texte "► " avant chaque h3 */
+h3:before {
+ content: "► ";
+}
+/* 15. mettre en rouge la première lettre des paragraphes du footer */
+footer p::first-letter {
+ color: red;
+}
+/* 16. sélectionner uniquement les articles .card situés
+ directement dans la section #news */
+#news article[class~="card"] {
+ margin: 10px;
+}

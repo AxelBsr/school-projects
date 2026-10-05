@@ -1,0 +1,50 @@
+/* sélection des légendes des fieldset */
+fieldset legend {
+ font-style: italic;
+}
+/* ajout de "/" avant chaque légende */
+legend:before {
+ content: "/";
+}
+/* ajout de "/" après chaque légende */
+legend:after {
+ content: "/";
+}
+/* sélection du formulaire qui doit être envoyé
+ à nobody@nowhere.fr */
+form[action="mailto:nobody@nowhere.fr"]  {
+ background-color: rgb(0, 255, 255);
+}
+/* sélection des balises input de type text */
+input[type="text"] {
+ background-color: rgb(220, 220, 220);
+}
+/* sélection de la première option du select */
+select:first-child {
+ text-decoration: underline;
+}
+/* sélection de l'input d'identifiant "p"
+ lorsqu'il a le focus */
+input[id="p"]:focus {
+ background-color: yellow;
+}
+/* sélection d'un input "active" */
+input:active {
+ background-color: red;
+}
+/* sélection du fieldset sur lequel passe la souris */
+fieldset:hover {
+ background-color: rgb(220, 220, 220);
+ color: red;
+}
+/* tous les descendants d'un fieldset doivent avoir
+ la même couleur d'écriture que celle définie pour le fieldset */
+fieldset * {
+ color: inherit;
+}
+/* la première lettre du texte de chaque option */
+option:first-letter {
+ font-weight: bolder;
+ color: blue;
+ text-transform: uppercase;
+}

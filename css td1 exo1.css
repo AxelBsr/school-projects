@@ -1,0 +1,49 @@
+/* sélection des titres de niveau 1 */
+h1 {
+ text-decoration: underline;
+}
+/* sélection des listes ordonnées et non ordonnées */
+ol , ul {
+ border: groove 2px red;
+ width: 50%;
+}
+/* sélection du dernier paragraphe */
+#conclusion {
+ color: white;
+ background-color: black;
+}
+/* sélection de tous les éléments dont l'id commence par div1
+ ou est égal à div1 */
+*[id|="div1"] {
+ border: solid 1px green;
+}
+/* sélection de texte faiblement mis en valeur dans un paragraphe */
+p em {
+ color: rgb(220, 220, 220);
+}
+/* sélection de texte fortement mis en valeur
+ dans le paragraphe div1-intro */
+#div1-intro strong
+{
+ color: rgb(220, 220, 0);
+}
+/* sélection des divisions situées juste après un titre h2 */
+h2 + div
+{
+ color: red;
+}
+/* sélection des items des listes ordonnées */
+ol li
+{
+ color: green;
+}
+/* sélection des éléments juste après un     <hr> */
+hr + *
+{
+ font-style: italic;
+}
+/* sélection des items des listes non ordonnées incluses dans la div1 */
+#div1 ul li 
+{
+ color: blue;
+}
